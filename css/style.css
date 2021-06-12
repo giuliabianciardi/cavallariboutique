@@ -1,0 +1,485 @@
+header { 
+  padding: 0em 0em 0px 0em;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  }
+
+h1 {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+section {
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.navbar {
+  margin-right: 0;
+  margin-left: 0;
+  background-color: #343434;
+}
+.navbar a {
+  color: black;
+}
+
+.navbar-nav li {
+  padding-right: calc(10px + 1vw);
+}
+.navbar-brand {
+  margin-right: 5rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: -1em;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* sezione prodotti di tendenza */
+.product-grid{
+  text-align: center;
+  border: 1px solid #e7e7e7;
+  font-family: 'Roboto', sans-serif;
+}
+.product-grid .product-image {
+  position: relative;
+}
+.product-grid .product-image a.image {
+  display: block;
+}
+.product-grid .product-image img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease 0s;
+}
+.product-grid .product-image:hover img {
+  transform: translate(10px,-10px);
+}
+.product-grid .product-sale-label {
+  color: #fff;
+  background: #1abc9c;
+  font-size: 13px;
+  text-transform: capitalize;
+  line-height: 35px;
+  width: 55px;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.product-grid .product-links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  transition: all 0.3s ease 0s;
+}
+.product-grid:hover .product-links {
+  opacity: 1;
+}
+.product-grid .product-links li {
+  margin: 0 0 5px;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.3s ease 0s;
+}
+
+.product-grid:hover .product-links li {
+  opacity: 1;
+  transform: translateX(0);
+  }
+.product-grid .product-links li a {
+  color: #fff;
+  background-color: #936227;
+  font-size: 14px;
+  text-align: left;
+  text-shadow: 0 0 3px rgba(0,0,0,0.7);
+  padding: 8px 10px;
+  display: block;
+  opacity: 0.9;
+  transition: all 0.3s ease 0s;
+}
+.product-grid .product-links li a:hover {
+  color: #fff;
+  box-shadow: 0 0 0 3px #fff inset;
+  opacity: 1;
+}
+
+.product-grid .product-links li a i{ margin: 0 5px 0 0; }
+.product-grid .product-content{ padding: 15px 0 5px; }
+.product-grid .title{
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 0 10px 14px;
+  margin: 0 0 7px;
+  border-bottom: 1px solid #dfe5e9;
+}
+.product-grid .title a{
+  color: #000;
+  transition: all 0.3s ease 0s;
+}
+
+
+/* sezione catalogo */
+h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 45px;
+  color: black;
+  font-family: 'Roboto', sans-serif 0!important;
+}
+
+#menu {
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+#menu .container-fluid {
+  width: 100%;
+}
+
+#menu .mix {
+  padding: 0px;
+}
+
+#menu .portfolio-item {
+  padding: 10px;
+}
+
+/* grafica foto catalogo */
+.shot-item {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.shot-item img {
+  width:100%;
+  height: 100%;
+  transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -webkit-transition: all .6s ease; 
+}
+
+img {
+vertical-align: middle;
+border-style: none;
+}
+
+.shot-item .single-content {
+  background-color: rgba(22, 26, 39, 0.7);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+  width: 100%;
+}
+
+.shot-item .single-content .fancy-table {
+  display: table;
+  height: 100%;
+  left: 0;
+  position:relative;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  object-fit: scale-down;
+}
+
+.shot-item .single-content .fancy-table .table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-family: 'Roboto', sans-serif 0!important;
+}
+
+.shot-item .single-content a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 35px;
+  font-family: 'Roboto', sans-serif 0!important;
+}
+
+.shot-item:hover img { /* zoom al passare del cursore */
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+.shot-item:hover .single-content {
+  opacity: 1;
+}
+
+.shot-item:hover .single-content a {
+  margin-bottom: 0;
+}
+
+/* CONTACT FORM */
+
+/*Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: rgba(0,0,0,.8);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* When moving the mouse over the submit button, add a different color */
+input[type=submit]:hover {
+  background-color: #F1C749;
+}
+
+/* Add a background color and some padding around the form */
+.container-form{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* END CONTACT FORM
+-------------------------------------------------- */
+
+/* STAFF CONTENT "marketing"
+-------------------------------------------------- */
+@media (min-width: 576px){
+_grid.scss:6.container {
+max-width: 540px;
+  }
+}
+
+.row {
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+margin-right: -15px;
+margin-left: -15px;
+}
+
+.marketing .col-lg-4 {
+margin-bottom: 1.5rem;
+text-align: center;
+}
+
+.col-lg-4 {
+position: relative;
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+}
+
+.marketing h2 {
+font-weight: 400;
+font-size: 2rem;
+}
+
+.marketing .col-lg-4 p {
+margin-right: .75rem;
+margin-left: .75rem;
+margin-top: 0;
+margin-bottom: 1rem;
+}
+
+.container {
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+
+/* END STAFF CONTENT "marketing" */
+
+.featurette-divider {
+margin: 5rem 0;
+}
+
+/* START FEATURETTES */
+
+hr {
+margin-top: 1rem;
+margin-bottom: 1rem;
+border: 0;
+border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.col-md-7 .col-md-5 {
+position: relative;
+width: 100%;
+padding-right: 15px;
+padding-left: 15px; 
+}
+
+@media (min-width: 40em) {
+.featurette-heading {
+font-size: 50px;
+  }
+}
+
+.featurette-heading {
+font-weight: 300;
+line-height: 1;
+letter-spacing: -.05rem;
+text-align: left;
+padding-top: 1rem;
+font-family: 'Roboto', sans-serif 0!important;
+}
+
+.lead {
+margin-top: 2rem;
+font-size: 1.25rem;
+font-weight: 300;
+}
+
+.lead-2 {
+font-size: 1.25rem;
+font-weight: 300;
+}
+
+.lead p {
+margin-top: 0;
+margin-bottom: 1rem;
+}
+
+.text-muted {
+color: #6c757d!important;
+background-color:#ffffff;
+font-weight: 400;
+font-size: 2rem;
+}
+
+
+/* END FEATURETTES */
+
+/* footer */
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+.footer {
+  border:solid;
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+.footer p{
+  text-align:center;
+}
+
+/* DOCUMENTAZIONE */
+h4 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif 0!important;
+  margin-bottom: 1rem!important;
+  margin-top: 3rem!important;
+}
+
+.scritte {
+  margin-left: 5em;
+  margin-right: 5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: left!important;
+  float: left;
+}
+
+.struttura {
+  float: center;
+  text-align: center!important;
+  vertical-align: center;
+ } 
