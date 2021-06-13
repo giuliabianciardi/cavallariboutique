@@ -6,6 +6,8 @@ header {
   font-family: 'Roboto', sans-serif;
   }
 
+/* introduzione cavallari boutique */
+
 h1 {
   text-align: center;
   margin-top: 1em;
@@ -21,6 +23,8 @@ section {
   width: 80%;
   text-align: center;
 }
+
+/* navbar */
 
 .navbar {
   margin-right: 0;
@@ -46,6 +50,7 @@ h2 {
 
 
 /* sezione prodotti di tendenza */
+
 .product-grid{
   text-align: center;
   border: 1px solid #e7e7e7;
@@ -102,9 +107,10 @@ h2 {
   opacity: 1;
   transform: translateX(0);
   }
-.product-grid .product-links li a {
+
+.product-grid .product-links li a { 
   color: #fff;
-  background-color: #936227;
+  background-color: #F1C749;
   font-size: 14px;
   text-align: left;
   text-shadow: 0 0 3px rgba(0,0,0,0.7);
@@ -238,20 +244,19 @@ border-style: none;
 
 /* CONTACT FORM */
 
-/*Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */  
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc; /* bordi grigi */
+  border-radius: 4px; /* bordi rotondi */
+  box-sizing: border-box; /* fa si che padding e grandezza restino la loro posto */
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; /* permette all'utente di modificare l'area del testo in verticale*/
   font-family: 'Roboto', sans-serif;
 }
 
-/* Style the submit button with a specific background color etc */
+/* tasto "Invia" */
 input[type=submit] {
   background-color: rgba(0,0,0,.8);
   color: white;
@@ -262,30 +267,26 @@ input[type=submit] {
   font-family: 'Roboto', sans-serif;
 }
 
-/* When moving the mouse over the submit button, add a different color */
+/* quando muovi il mouse sul tasto invia, questo cambia colore */
 input[type=submit]:hover {
   background-color: #F1C749;
 }
 
-/* Add a background color and some padding around the form */
+/* il container del contact form */
 .container-form{
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
 
-/* END CONTACT FORM
--------------------------------------------------- */
-
-/* STAFF CONTENT "marketing"
--------------------------------------------------- */
-@media (min-width: 576px){
+/* STAFF CONTENT "marketing" */
+@media (min-width: 576px){ 
 _grid.scss:6.container {
-max-width: 540px;
+max-width: 540px; /* spazio tra le foto */
   }
 }
 
-.row {
+.row { /* il div delle 3 img */
 display: -ms-flexbox;
 display: flex;
 -ms-flex-wrap: wrap;
@@ -294,12 +295,12 @@ margin-right: -15px;
 margin-left: -15px;
 }
 
-.marketing .col-lg-4 {
+.marketing .col-lg-4 { 
 margin-bottom: 1.5rem;
 text-align: center;
 }
 
-.col-lg-4 {
+.col-lg-4 { /* insieme di foto + nome + testo */
 position: relative;
 width: 100%;
 padding-right: 15px;
@@ -318,7 +319,7 @@ margin-top: 0;
 margin-bottom: 1rem;
 }
 
-.container {
+.container { /* il container delle 3 img */
 width: 100%;
 padding-right: 15px;
 padding-left: 15px;
@@ -326,22 +327,20 @@ margin-right: auto;
 margin-left: auto;
 }
 
-/* END STAFF CONTENT "marketing" */
+/* START FEATURETTES: orari, location e img */
 
 .featurette-divider {
 margin: 5rem 0;
 }
 
-/* START FEATURETTES */
-
-hr {
+hr { /* stile del divider tra sezione prima e questa */
 margin-top: 1rem;
 margin-bottom: 1rem;
 border: 0;
 border-top: 1px solid rgba(0,0,0,.1);
 }
 
-.col-md-7 .col-md-5 {
+.col-md-7 .col-md-5 { /* le due parti della classe, prima testo, seconda foto */
 position: relative;
 width: 100%;
 padding-right: 15px;
@@ -363,33 +362,30 @@ padding-top: 1rem;
 font-family: 'Roboto', sans-serif 0!important;
 }
 
-.lead {
+.lead { /* testo di .col-md-7 */
 margin-top: 2rem;
 font-size: 1.25rem;
 font-weight: 300;
 }
 
-.lead-2 {
+.lead-2 { /* seconda parte di testo di .col-md-7 */
 font-size: 1.25rem;
 font-weight: 300;
 }
 
-.lead p {
+.lead p { 
 margin-top: 0;
 margin-bottom: 1rem;
 }
 
-.text-muted {
+.text-muted { /* "I nostri orari" scritto più chiaro */
 color: #6c757d!important;
 background-color:#ffffff;
 font-weight: 400;
 font-size: 2rem;
 }
 
-
-/* END FEATURETTES */
-
-/* footer */
+/* FOOTER */
 
 .footer-basic {
   padding:40px 0;
@@ -397,7 +393,7 @@ font-size: 2rem;
   color:#4b4c4d;
 }
 
-.footer-basic ul {
+.footer-basic ul { /* ul: unordered list */
   padding:0;
   list-style:none;
   text-align:center;
@@ -406,17 +402,17 @@ font-size: 2rem;
   margin-bottom:0;
 }
 
-.footer-basic li {
+.footer-basic li { /* li: list item */
   padding:0 10px;
 }
 
-.footer-basic ul a {
+.footer-basic ul a { /* link alla pagina */
   color:inherit;
   text-decoration:none;
   opacity:0.8;
 }
 
-.footer-basic ul a:hover {
+.footer-basic ul a:hover { /* opacità link */
   opacity:1;
 }
 
