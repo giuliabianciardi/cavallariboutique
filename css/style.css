@@ -1,9 +1,12 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
 header { 
   padding: 0em 0em 0px 0em;
   text-align: center;
   background-color: white;
   color: black;
-  font-family: 'Roboto', sans-serif;
   }
 
 /* introduzione cavallari boutique */
@@ -12,7 +15,6 @@ h1 {
   text-align: center;
   margin-top: 1em;
   margin-bottom: 0.5em;
-  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
@@ -45,7 +47,6 @@ section {
 h2 {
   text-align: center;
   margin-bottom: -1em;
-  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -54,7 +55,6 @@ h2 {
 .product-grid{
   text-align: center;
   border: 1px solid #e7e7e7;
-  font-family: 'Roboto', sans-serif;
 }
 .product-grid .product-image {
   position: relative;
@@ -147,7 +147,6 @@ h3 {
   margin-bottom: 1rem;
   font-size: 45px;
   color: black;
-  font-family: 'Roboto', sans-serif 0!important;
 }
 
 #menu {
@@ -216,7 +215,6 @@ border-style: none;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  font-family: 'Roboto', sans-serif 0!important;
 }
 
 .shot-item .single-content a {
@@ -224,7 +222,6 @@ border-style: none;
   text-decoration: none;
   font-size: 25px;
   padding: 35px;
-  font-family: 'Roboto', sans-serif 0!important;
 }
 
 .shot-item:hover img { /* zoom al passare del cursore */
@@ -253,7 +250,6 @@ input[type=text], select, textarea {
   margin-top: 6px; 
   margin-bottom: 16px; 
   resize: vertical; /* permette all'utente di modificare l'area del testo in verticale*/
-  font-family: 'Roboto', sans-serif;
 }
 
 /* tasto "Invia" */
@@ -264,7 +260,6 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
 }
 
 /* quando muovi il mouse sul tasto invia, questo cambia colore */
@@ -359,7 +354,6 @@ line-height: 1;
 letter-spacing: -.05rem;
 text-align: left;
 padding-top: 1rem;
-font-family: 'Roboto', sans-serif 0!important;
 }
 
 .lead { /* testo di .col-md-7 */
@@ -460,7 +454,6 @@ font-size: 2rem;
 /* DOCUMENTAZIONE */
 h4 {
   text-align: center;
-  font-family: 'Roboto', sans-serif 0!important;
   margin-bottom: 1rem!important;
   margin-top: 3rem!important;
 }
